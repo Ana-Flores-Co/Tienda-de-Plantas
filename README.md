@@ -5,3 +5,4 @@ Tecnologías:  GitHub Copilot o IA.
 Funcionalidades: Carrito de compras, Login de usuarios.
 Estructura: index.html (página principal), styles.css (estilo de toda la página), script.js (interactividad).
 Estudiante: Ana Isabel Flores Coria.
+Version Actualizada de la Tienda de Plantas Aromáticas.
