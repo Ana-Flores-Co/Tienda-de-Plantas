@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Iniciar Sesión</h1>
+  <nav>
+    <ul>
+      <li><a onclick="window.open('productos.html', '_blank')">Productos</a></li>
+      <li><a onclick="window.open('eventos.html', '_blank')">Eventos</a></li>
+      <li><a onclick="window.open('tips.html', '_blank')">Tips</a></li>
+      <li><a onclick="window.open('carrito.html', '_blank')">Carrito</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section style="max-width: 400px; margin: 40px auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); background-color: #f9f9f9;">
+  <h2>Regístrate con tu correo electrónico</h2>
+  <input id="correo" type="email" placeholder="Ej: abc@correo.com" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: 1px solid #ccc;">
+
+  <button id="registrar-btn" style="width: 100%; padding: 10px; border: none; border-radius: 6px;">Registrarse</button>
+  <p id="registro-error" style="color: red; display: none; margin-top: 10px;"></p>
+  <p id="registro-exito" style="color: green; display: none; margin-top: 10px;"></p>
+</section>
+</main>
+
+<button onclick="location.href='index.html'">Volver al inicio</button>
+
+<footer>
+  <div class="footer-col">
+    <h3 class="f">Explorar</h3>
+    <ul>
+      <li><a onclick="window.open('eventos.html', '_blank')">Eventos</a></li>
+      <li><a onclick="window.open('tips.html', '_blank')">Tips</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h3 class="f">Enlaces útiles</h3>
+    <ul>
+      <li><a onclick="window.open('productos.html', '_blank')">Productos</a></li>
+      <li><a onclick="window.open('carrito.html', '_blank')">Carrito</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h3 class="f">Ubicación</h3>
+    <p>Av. Ecológica 204</p>
+    <p>Lunes a Viernes, 9:00 - 18:00</p>
+    <p>Tel: (4) 4473637</p>
+    <p>Email: contacto@plantasaromaticas.com</p>
+  </div>
+  <div class="footer-col">
+    <h3 class="f">Síguenos</h3>
+    <ul>
+      <li><a onclick="window.open('https://www.facebook.com/?locale=es_LA', '_blank')">Facebook</a></li>
+      <li><a onclick="window.open('https://www.instagram.com/', '_blank')">Instagram</a></li>
+      <li><a onclick="window.open('https://www.tiktok.com/', '_blank')">TikTok</a></li>
+      <li><a onclick="window.open('https://www.whatsapp.com/', '_blank')">WhatsApp</a></li>
+    </ul>
+  </div>
+  
+</footer>
+
+<p class="credits">© 2025 Tienda de Plantas Aromáticas</p>
+
+</body>
+</html>

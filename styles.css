@@ -1,0 +1,382 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #e2fbce, #e3ef26, #076653);
+  margin: 0;
+  padding: 0;
+  color: #06231d;
+}
+
+header {
+  background-color: #e2fbce;
+  padding: 2rem;
+  text-align: center;
+  color: #076653;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main {
+  padding: 2rem;
+  max-width: 1080px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  color: #076653;
+}
+.f{
+  color: #e3ef26;
+}
+.producto-carrito {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f1f8e9;
+  border-radius: 5px;
+}
+.producto-carrito img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f1f8e9;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e2fbce;
+  color: #076653;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+button:hover {
+  background-color: #fffdee;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #0c342c;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #a3d9a5;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #076653;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color: #e2fbce;
+}
+
+/* Carrusel */
+.carrusel {
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carrusel-imagenes {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+}
+
+.carrusel-imagenes img {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carrusel-imagenes img.activa {
+  opacity: 1;
+  z-index: 1;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100vw); }
+  40% { transform: translateX(-200vw); }
+  60% { transform: translateX(-300vw); }
+  80% { transform: translateX(-400vw); }
+  100% { transform: translateX(0); }
+}
+
+button{
+  background-color: #e2fbce;
+  color: #076653;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 10px;
+
+}
+#registrar-btn{
+  background-color: #076653;
+  color: #e2fbce;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 10px;
+
+}
+#registrar-btn:hover {
+  background-color: #e2fbce;
+  color: #076653;
+}
+
+/* Productos */
+.productos {
+  padding: 40px;
+  text-align: center;
+  background-color: none;
+}
+
+.productos h2 {
+  margin-bottom: 20px;
+}
+
+.producto {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.producto button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #e2fbce;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background: #fffdee;
+}
+
+/* Evento */
+.evento {
+  padding: 40px;
+  background-color: none;
+  text-align: center;
+}
+
+.evento img {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Registro */
+.registro {
+  padding: 40px;
+  text-align: center;
+  background-color: #f0fff5;
+}
+
+.registro input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.registro button {
+  padding: 10px 20px;
+  background-color: #90cc98;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.registro button:hover {
+  background-color: #6fbf76;
+}
+
+/* VIP */
+.vip {
+  background-color: #e6f8ea;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Texto + Imagen */
+.texto-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.texto-imagen img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.texto-imagen div {
+  max-width: 400px;
+  font-size: 1.1rem;
+}
+
+/* Carrito */
+.carrito {
+  padding: 40px;
+  background-color: #f3fdf5;
+}
+
+.item-carrito {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #076653;
+  color: #e2fbce;
+  padding: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #e2fbce;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #e3ef26;
+}
+
+.footer-col input[type="email"] {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 0.9rem;
+  color: #e2fbce;
+  background-color: #076653;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .texto-imagen {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
