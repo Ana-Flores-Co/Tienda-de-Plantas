@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #06231d;
+  overflow-x: hidden;
 }
 
 header {
@@ -378,5 +379,64 @@ footer {
   footer {
     flex-direction: column;
     text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .productos {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .producto {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .producto img {
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .carrusel-imagenes {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .producto-carrito {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .producto-carrito img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin: 10px 0;
   }
 }
